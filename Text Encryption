@@ -4,9 +4,6 @@ import hashlib
 from Crypto.Cipher import AES
 from Crypto import Random
 
-# Ensure you have the 'pycryptodome' library installed:
-# pip install pycryptodome
-
 ENCRYPTION_KEY = os.getenv('ENCRYPTION_KEY')  # Must be 256 bits (32 characters)
 IV_LENGTH = 16  # For AES, this is always 16 bytes
 
